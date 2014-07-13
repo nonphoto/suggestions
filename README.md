@@ -1,4 +1,4 @@
-suggestions
+JLSuggestionsGenerator
 ===========
 
-An extension of Apple's UITextField class that searches a list of strings that match a given query using a fuzzy searching algorithm
+An Objective-C object that generates a list of suggestions from a source table for a given string. The algorithm is inspired by Sublime Text's fuzzy searching feature.
