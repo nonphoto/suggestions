@@ -12,4 +12,6 @@
 
 @property (strong, nonatomic) NSArray * data;
 
+- (NSArray *)generateSuggestionsForString:(NSString *)string;
+
 @end

@@ -9,7 +9,7 @@
 #import <UIKit/UIKit.h>
 #import "JLSuggestionGenerator.h"
 
-@interface ViewController : UIViewController
+@interface ViewController : UIViewController <UITextFieldDelegate>
 
 @property (weak, nonatomic) IBOutlet UITextView *outputTextView;
 @property (weak, nonatomic) IBOutlet UITextField *textField;

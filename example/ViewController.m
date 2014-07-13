@@ -10,6 +10,8 @@
 
 @interface ViewController ()
 
+@property (strong, nonatomic) JLSuggestionGenerator * generator;
+
 @end
 
 @implementation ViewController
@@ -31,11 +33,18 @@
 
     NSArray * testData = [testString componentsSeparatedByString:@" "];
 
-    self.outputTextView.text = [testData componentsJoinedByString:@"\n"];
+    self.outputTextView.text = @"";
 
-    JLSuggestionGenerator * generator = [[JLSuggestionGenerator alloc] init];
-    generator.data = testData;
+    self.generator = [[JLSuggestionGenerator alloc] init];
+    self.generator.data = testData;
+
+    [self.textField addTarget:self action:@selector(textFieldDidChange:) forControlEvents:UIControlEventEditingChanged];
 }
 
+- (void)textFieldDidChange:(id)sender
+{
+    NSArray * suggestions = [self.generator generateSuggestionsForString:self.textField.text];
+    self.outputTextView.text = [suggestions componentsJoinedByString:@"\n"];
+}
 
 @end
