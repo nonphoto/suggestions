@@ -20,8 +20,8 @@
         [self.data enumerateObjectsUsingBlock:^(id obj, NSUInteger i, BOOL *stop) {
             NSTextCheckingResult * match = [regex firstMatchInString:self.data[i] options:0 range:NSMakeRange(0, [self.data[i] length])];
             if (match) {
-                NSRange range = [match range];
-                NSUInteger rank = range.length;
+                // NSRange range = [match range];
+                // NSUInteger rank = range.length;
                 [results addObject:self.data[i]];
             }
         }];

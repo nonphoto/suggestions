@@ -21,7 +21,6 @@
 		DD3FF69D196B95870018EE99 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = DD3FF69B196B95870018EE99 /* InfoPlist.strings */; };
 		DD3FF69F196B95870018EE99 /* SuggestionsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = DD3FF69E196B95870018EE99 /* SuggestionsTests.m */; };
 		DD3FF6AA196B969B0018EE99 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DD3FF6A9196B969B0018EE99 /* ViewController.m */; };
-		DD3FF6AD196B970B0018EE99 /* JLSuggestionTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = DD3FF6AC196B970B0018EE99 /* JLSuggestionTextField.m */; };
 		DDB5BC3E19733CBA00B08EDC /* JLSuggestionGenerator.m in Sources */ = {isa = PBXBuildFile; fileRef = DDB5BC3D19733CBA00B08EDC /* JLSuggestionGenerator.m */; };
 /* End PBXBuildFile section */
 
@@ -55,8 +54,6 @@
 		DD3FF69E196B95870018EE99 /* SuggestionsTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SuggestionsTests.m; sourceTree = "<group>"; };
 		DD3FF6A8196B969B0018EE99 /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ViewController.h; path = ../ViewController.h; sourceTree = "<group>"; };
 		DD3FF6A9196B969B0018EE99 /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ViewController.m; path = ../ViewController.m; sourceTree = "<group>"; };
-		DD3FF6AB196B970B0018EE99 /* JLSuggestionTextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JLSuggestionTextField.h; sourceTree = "<group>"; };
-		DD3FF6AC196B970B0018EE99 /* JLSuggestionTextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JLSuggestionTextField.m; sourceTree = "<group>"; };
 		DDB5BC3C19733CBA00B08EDC /* JLSuggestionGenerator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JLSuggestionGenerator.h; sourceTree = "<group>"; };
 		DDB5BC3D19733CBA00B08EDC /* JLSuggestionGenerator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JLSuggestionGenerator.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -123,8 +120,6 @@
 				DD3FF685196B95870018EE99 /* Main.storyboard */,
 				DD3FF6A8196B969B0018EE99 /* ViewController.h */,
 				DD3FF6A9196B969B0018EE99 /* ViewController.m */,
-				DD3FF6AB196B970B0018EE99 /* JLSuggestionTextField.h */,
-				DD3FF6AC196B970B0018EE99 /* JLSuggestionTextField.m */,
 				DDB5BC3C19733CBA00B08EDC /* JLSuggestionGenerator.h */,
 				DDB5BC3D19733CBA00B08EDC /* JLSuggestionGenerator.m */,
 				DD3FF68B196B95870018EE99 /* Images.xcassets */,
@@ -260,7 +255,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				DD3FF6AA196B969B0018EE99 /* ViewController.m in Sources */,
-				DD3FF6AD196B970B0018EE99 /* JLSuggestionTextField.m in Sources */,
 				DD3FF684196B95870018EE99 /* AppDelegate.m in Sources */,
 				DD3FF680196B95870018EE99 /* main.m in Sources */,
 				DDB5BC3E19733CBA00B08EDC /* JLSuggestionGenerator.m in Sources */,
