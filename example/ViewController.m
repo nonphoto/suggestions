@@ -33,15 +33,9 @@
 
     self.outputTextView.text = [testData componentsJoinedByString:@"\n"];
 
-    self.textField.dataSource = testData;
-    self.textField.suggestionDelegate = self;
+    JLSuggestionGenerator * generator = [[JLSuggestionGenerator alloc] init];
+    generator.data = testData;
 }
 
-- (void)textField:(JLSuggestionTextField *)textField didUpdateSuggestions:(NSArray *)suggestions;
-{
-    if (suggestions) {
-        self.outputTextView.text = [suggestions componentsJoinedByString:@"\n"];
-    }
-}
 
 @end

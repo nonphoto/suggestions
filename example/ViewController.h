@@ -7,11 +7,11 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "JLSuggestionTextField.h"
+#import "JLSuggestionGenerator.h"
 
-@interface ViewController : UIViewController <JLSuggestionTextFieldDelegate>
+@interface ViewController : UIViewController
 
 @property (weak, nonatomic) IBOutlet UITextView *outputTextView;
-@property (weak, nonatomic) IBOutlet JLSuggestionTextField *textField;
+@property (weak, nonatomic) IBOutlet UITextField *textField;
 
 @end

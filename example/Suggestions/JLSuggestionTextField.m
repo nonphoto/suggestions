@@ -54,7 +54,7 @@
         if (match) {
             NSRange range = [match range];
             NSUInteger rank = range.length;
-            [results addObject:self.dataSource[idx]];
+            [results addObject:self.dataSource];
         }
     }];
     [self.suggestionDelegate textField:self didUpdateSuggestions:results];
